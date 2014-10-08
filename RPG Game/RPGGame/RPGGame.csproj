@@ -75,6 +75,7 @@
     <Compile Include="Interfaces\IFlyable.cs" />
     <Compile Include="Interfaces\ISpeedable.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Items\SavingItem\MagicShield.cs" />
     <Compile Include="Items\Weapons\Ammo.cs" />
     <Compile Include="Items\SavingItem\Armor.cs" />
     <Compile Include="Items\SavingItem\BigShield.cs" />

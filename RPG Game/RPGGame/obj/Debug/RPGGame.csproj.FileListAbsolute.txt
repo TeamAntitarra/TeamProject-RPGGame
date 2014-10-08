@@ -1,0 +1,6 @@
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.exe.config
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csprojResolveAssemblyReference.cache
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.exe
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.pdb
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.exe
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
