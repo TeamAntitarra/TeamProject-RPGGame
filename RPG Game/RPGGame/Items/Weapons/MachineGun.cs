@@ -2,12 +2,12 @@
 {
     public class MachineGun : Weapon
     {
-        public MachineGun(string id, double range, DestructiveForce force)
-            : base(id, range, force)
+        public MachineGun(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
+            : base(id, x, y, sizeX, sizeY, range, force)
         {
             this.id = "Machine Gun";
             this.Range = 40;
-            force = DestructiveForce.Middle;
+            force = DamageForce.Middle;
         }
     }
 }

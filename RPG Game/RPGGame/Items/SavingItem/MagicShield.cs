@@ -7,8 +7,8 @@
         /// </summary>
         /// <param name="id">Item name</param>
         /// <param name="duration">Duration of shield in ms</param>
-        public MagicShield(string id, int duration)
-            : base(id)
+        public MagicShield(string id, int x, int y, int sizeX, int sizeY, int duration)
+            : base(id, x, y, sizeX, sizeY)
         {
             this.id = "Magic Shield";
             this.Duration = 1500;

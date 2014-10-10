@@ -7,8 +7,8 @@
         /// </summary>
         /// <param name="id">Item name</param>
         /// <param name="defensePoints">Add points to defense of character</param>
-        public Armor(string id, int defensePoints)
-            : base(id)
+        public Armor(string id, int x, int y, int sizeX, int sizeY, int defensePoints)
+            : base(id, x, y, sizeX, sizeY)
         {
             this.id = "Armor";
             this.DefensePoints = 50;

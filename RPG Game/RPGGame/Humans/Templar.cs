@@ -4,16 +4,28 @@
 
     public class Templar : Human
     {
-        public Templar(string id, int healthPoints, int defensePoints, double range, Item templarSword)
-            : base(id, healthPoints, defensePoints, range)
+        public Templar(string id, int x, int y, int sizeX, int sizeY,
+            int healthPoints, int defensePoints, int movementSpeed, Item templarSword)
+            : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
-            this.id = "Knight Templar";
-            this.HealthPoints = 100;
+            this.id = "Templar";
+            this.MaximumHealthPoints = 100;
             this.DefensePoints = 100;
-            this.Range = 10;
+            this.MovementSpeed = 100;
             this.TemplarSword = templarSword;
             this.Inventory = new List<Item>(5);
         }
+
+        //public Templar(string id, int healthPoints, int defensePoints, double range, Item templarSword)
+        //    : base(id, healthPoints, defensePoints, range)
+        //{
+        //    this.id = "Knight Templar";
+        //    this.HealthPoints = 100;
+        //    this.DefensePoints = 100;
+        //    this.Range = 10;
+        //    this.TemplarSword = templarSword;
+        //    this.Inventory = new List<Item>(5);
+        //}
 
         public Item TemplarSword { get; set; }
 

@@ -7,8 +7,8 @@
         /// </summary>
         /// <param name="id">Item name</param>
         /// <param name="defensePoints">Add points to defense of character</param>
-        public BigShield(string id, int defensePoints)
-            : base(id)
+        public BigShield(string id, int x, int y, int sizeX, int sizeY, int defensePoints)
+            : base(id, x, y, sizeX, sizeY)
         {
             this.id = "Big Shield";
             this.DefensePoints = 100;

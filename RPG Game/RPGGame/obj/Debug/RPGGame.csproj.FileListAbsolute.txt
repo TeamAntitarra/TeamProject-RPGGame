@@ -4,3 +4,5 @@ C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RP
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.pdb
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.exe
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\EntityFramework.dll
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\EntityFramework.xml

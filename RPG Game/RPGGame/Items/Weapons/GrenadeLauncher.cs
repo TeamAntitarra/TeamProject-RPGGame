@@ -2,12 +2,12 @@
 {
     public class GrenadeLauncher : Weapon
     {
-        public GrenadeLauncher(string id, double range, DestructiveForce force)
-            : base(id, range, force)
+        public GrenadeLauncher(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
+            : base(id, x, y, sizeX, sizeY, range, force)
         {
             this.id = "Grenade Launcher";
             this.Range = 50;
-            force = DestructiveForce.Large;
+            force = DamageForce.Large;
         }
     }
 }

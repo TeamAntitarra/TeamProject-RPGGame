@@ -7,8 +7,8 @@
         /// </summary>
         /// <param name="id">Item name</param>
         /// <param name="healthPoints">Add points to health of character</param>
-        public PackHealth(string id, int healthPoints)
-            : base(id)
+        public PackHealth(string id, int x, int y, int sizeX, int sizeY, int healthPoints)
+            : base(id, x, y, sizeX, sizeY)
         {
             this.id = "Pack Health";
             this.HealthPoints = 50;

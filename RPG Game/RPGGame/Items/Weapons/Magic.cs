@@ -2,12 +2,12 @@
 {
     public class Magic : Weapon
     {
-        public Magic(string id, double range, DestructiveForce force)
-            : base(id, range, force)
+        public Magic(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
+            : base(id, x, y, sizeX, sizeY, range, force)
         {
             this.id = "Magic";
             this.Range = 40;
-            force = DestructiveForce.Extralarge;
+            force = DamageForce.Extralarge;
         }
     }
 }

@@ -2,12 +2,12 @@
 {
     public class TemplarSword : Weapon
     {
-        public TemplarSword(string id, double range, DestructiveForce force)
-            : base(id, range, force)
+        public TemplarSword(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
+            : base(id, x, y, sizeX, sizeY, range, force)
         {
             this.id = "Templar Sword";
             this.Range = 5;
-            force = DestructiveForce.Large;
+            force = DamageForce.Large;
         }
     }
 }

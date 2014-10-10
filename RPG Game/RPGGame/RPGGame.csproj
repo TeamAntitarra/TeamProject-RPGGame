@@ -47,8 +47,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +68,8 @@
     <Compile Include="Demons\Stalker.cs" />
     <Compile Include="Demons\Succubus.cs" />
     <Compile Include="Demons\TheProwler.cs" />
+    <Compile Include="Demons\Zombie.cs" />
+    <Compile Include="Direction.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Humans\Agent.cs" />
@@ -71,20 +78,25 @@
     <Compile Include="Humans\Sergeant.cs" />
     <Compile Include="Humans\Templar.cs" />
     <Compile Include="Humans\Woman.cs" />
+    <Compile Include="Interfaces\ICharacter.cs" />
     <Compile Include="Interfaces\IFightable.cs" />
     <Compile Include="Interfaces\IFlyable.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IMovable.cs" />
     <Compile Include="Interfaces\ISpeedable.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Items\SavingItem\MagicShield.cs" />
     <Compile Include="Items\Weapons\Ammo.cs" />
     <Compile Include="Items\SavingItem\Armor.cs" />
     <Compile Include="Items\SavingItem\BigShield.cs" />
-    <Compile Include="Items\DestructiveForce.cs" />
+    <Compile Include="Items\DamageForce.cs" />
     <Compile Include="Items\Weapons\Grenade.cs" />
     <Compile Include="Items\Weapons\GrenadeLauncher.cs" />
+    <Compile Include="Items\Weapons\LaserGun.cs" />
     <Compile Include="Items\Weapons\MachineGun.cs" />
     <Compile Include="Items\SavingItem\PackHealth.cs" />
     <Compile Include="Items\Weapons\Magic.cs" />
+    <Compile Include="Items\Weapons\MeltingGun.cs" />
     <Compile Include="Items\Weapons\TemplarSword.cs" />
     <Compile Include="Items\Weapons\Weapon.cs" />
     <Compile Include="Program.cs" />
@@ -93,6 +105,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
