@@ -70,6 +70,7 @@
     <Compile Include="Demons\TheProwler.cs" />
     <Compile Include="Demons\Zombie.cs" />
     <Compile Include="Direction.cs" />
+    <Compile Include="GameEngine\Engine.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Humans\Agent.cs" />
@@ -85,6 +86,11 @@
     <Compile Include="Interfaces\IMovable.cs" />
     <Compile Include="Interfaces\ISpeedable.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Items\Objects\Building.cs" />
+    <Compile Include="Items\Objects\Fence.cs" />
+    <Compile Include="Items\Objects\Rock.cs" />
+    <Compile Include="Items\Objects\Tree.cs" />
+    <Compile Include="Items\Objects\Truck.cs" />
     <Compile Include="Items\SavingItem\MagicShield.cs" />
     <Compile Include="Items\Weapons\Ammo.cs" />
     <Compile Include="Items\SavingItem\Armor.cs" />
@@ -124,6 +130,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
