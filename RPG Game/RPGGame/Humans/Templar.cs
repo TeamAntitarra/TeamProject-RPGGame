@@ -1,18 +1,21 @@
 ﻿namespace RPGGame.Humans
 {
     using System.Collections.Generic;
+    using RPGGame.Interfaces;
+    using RPGGame.Items;
+    using RPGGame.Items.Weapons;
 
     public class Templar : Human
     {
         public Templar(string id, int x, int y, int sizeX, int sizeY,
-            int healthPoints, int defensePoints, int movementSpeed, Item templarSword)
+            int healthPoints, int defensePoints, int movementSpeed, TemplarSword templarSword)
             : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
             this.id = "Templar";
             this.MaximumHealthPoints = 100;
             this.DefensePoints = 100;
             this.MovementSpeed = 100;
-            this.TemplarSword = templarSword;
+            this.Weapon = templarSword;
             this.Inventory = new List<Item>(5);
         }
 
@@ -27,7 +30,7 @@
         //    this.Inventory = new List<Item>(5);
         //}
 
-        public Item TemplarSword { get; set; }
+        public Weapon Weapon { get; set; }
 
         public override void AddToInventory(Item item)
         {

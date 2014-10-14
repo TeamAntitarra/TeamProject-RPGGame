@@ -47,16 +47,18 @@
   <Class Name="RPGGame.Demons.ElTemblo" Collapsed="true">
     <Position X="0.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Demons\ElTemblo.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Demons.LordTruikwor" Collapsed="true">
     <Position X="0.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Demons\LordTruikwor.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Demons.Stalker" Collapsed="true">
     <Position X="2.5" Y="7" Width="1.5" />
@@ -76,23 +78,26 @@
   <Class Name="RPGGame.Demons.TheProwler" Collapsed="true">
     <Position X="2.5" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Demons\TheProwler.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Humans.Agent" Collapsed="true">
     <Position X="4.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIgAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Humans\Agent.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Humans.Magician" Collapsed="true">
     <Position X="4.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Humans\Magician.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Humans.Man" Collapsed="true">
     <Position X="4.5" Y="9.25" Width="1.5" />
@@ -104,14 +109,15 @@
   <Class Name="RPGGame.Humans.Sergeant" Collapsed="true">
     <Position X="6.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAgAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Humans\Sergeant.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Humans.Templar" Collapsed="true">
     <Position X="6.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAAAAAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Humans\Templar.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -270,42 +276,35 @@
     </TypeIdentifier>
   </Struct>
   <Interface Name="RPGGame.Interfaces.IFightable" Collapsed="true">
-    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Position X="0.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IFightable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="RPGGame.Interfaces.IFlyable" Collapsed="true">
-    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IFlyable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RPGGame.Interfaces.ISpeedable" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\ISpeedable.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="RPGGame.Interfaces.ICharacter" Collapsed="true">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BQAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICharacter.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="RPGGame.Interfaces.IGameObject" Collapsed="true">
-    <Position X="0.5" Y="3" Width="1.5" />
+    <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAABAAYAA=</HashCode>
       <FileName>Interfaces\IGameObject.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="RPGGame.Interfaces.IMovable" Collapsed="true">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAACAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IMovable.cs</FileName>

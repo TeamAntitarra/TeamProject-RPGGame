@@ -8,5 +8,9 @@ namespace RPGGame.GameEngine
 {
     public class Engine
     {
+        public Engine()
+        {
+
+        }
     }
 }

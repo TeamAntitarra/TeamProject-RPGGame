@@ -2,7 +2,7 @@
 {
     using RPGGame.Interfaces;
 
-    public abstract class GameObject : IGameObject
+    public abstract class GameObject : IGameObject, IRenderable
     {
         protected GameObject(string id, int x, int y, int sizeX, int sizeY)
         {

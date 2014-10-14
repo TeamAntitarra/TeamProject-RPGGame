@@ -1,18 +1,21 @@
 ﻿namespace RPGGame.Humans
 {
     using System.Collections.Generic;
+    using RPGGame.Interfaces;
+    using RPGGame.Items;
+    using RPGGame.Items.Weapons;
 
-    public class Magician : Human
+    public class Magician : Human, IFightable
     {
         public Magician(string id, int x, int y, int sizeX, int sizeY,
-            int healthPoints, int defensePoints, int movementSpeed, Item magic)
+            int healthPoints, int defensePoints, int movementSpeed, Magic magic)
             : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
             this.id = "Magician";
             this.MaximumHealthPoints = 100;
             this.DefensePoints = 90;
             this.MovementSpeed = 90;
-            this.Magic = magic;
+            this.Weapon = magic;
             this.Inventory = new List<Item>(5);
         }
 
@@ -25,7 +28,7 @@
         //    this.Range = 30;
         //    this.Inventory = new List<Item>(3);
         //}
-        public Item Magic { get; set; }
+        public Weapon Weapon { get; set; }
 
         public override void AddToInventory(Item item)
         {

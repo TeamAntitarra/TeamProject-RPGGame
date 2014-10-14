@@ -1,17 +1,21 @@
 ﻿namespace RPGGame.Demons
 {
     using System.Collections.Generic;
+    using RPGGame.Interfaces;
+    using RPGGame.Items;
+    using RPGGame.Items.Weapons;
 
-    public class TheProwler : Demon
+    public class TheProwler : Demon, IFightable
     {
         public TheProwler(string id, int x, int y, int sizeX, int sizeY,
-                int healthPoints, int defensePoints, int movementSpeed)
+                int healthPoints, int defensePoints, int movementSpeed, MeltingGun meltingGun)
                 : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
             {
                 this.id = "The Prowler";
                 this.MaximumHealthPoints = 60;
                 this.DefensePoints = 30;
                 this.MovementSpeed = 30;
+                this.Weapon = meltingGun;
                 this.Inventory = new List<Item>(2);
             }
 
@@ -24,6 +28,8 @@
         //    this.Range = 20;
         //    this.Inventory = new List<Item>(2);
         //}
+
+        public Weapon Weapon { get; set; }
 
         public override void AddToInventory(Item item)
         {

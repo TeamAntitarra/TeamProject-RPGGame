@@ -1,18 +1,21 @@
 ﻿namespace RPGGame.Humans
 {
     using System.Collections.Generic;
+    using RPGGame.Interfaces;
+    using RPGGame.Items;
+    using RPGGame.Items.Weapons;
 
-    public class Agent : Human
+    public class Agent : Human, IFightable
     {
         public Agent(string id, int x, int y, int sizeX, int sizeY,
-            int healthPoints, int defensePoints, int movementSpeed, Item laserGun)
+            int healthPoints, int defensePoints, int movementSpeed, LaserGun laserGun)
             : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
             this.id = "Agent";
             this.MaximumHealthPoints = 90;
             this.DefensePoints = 50;
             this.MovementSpeed = 50;
-            this.LaserGun = laserGun;
+            this.Weapon = laserGun;
             this.Inventory = new List<Item>(4);
         }
 
@@ -25,7 +28,7 @@
         //    this.Range = 5;
         //    this.Inventory = new List<Item>(4); 
         //}
-        public Item LaserGun { get; set; }
+        public Weapon Weapon { get; set; } 
 
         public override void AddToInventory(Item item)
         {
