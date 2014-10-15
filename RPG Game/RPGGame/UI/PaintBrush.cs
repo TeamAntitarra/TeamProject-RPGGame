@@ -39,7 +39,7 @@ namespace RPGGame.UI
         private Image GetObjectImage(IRenderable renderableObject)
         {
             Image image = null;
-            switch (renderableObject.id)
+            switch (renderableObject.Id)
             {
                 case "Templar":
                     image = this.tamplerImage;

@@ -6,14 +6,14 @@
     {
         protected GameObject(string id, int x, int y, int sizeX, int sizeY)
         {
-            this.id = id;
+            this.Id = id;
             this.X = x;
             this.Y = y;
             this.SizeX = sizeX;
             this.SizeY = sizeY;
         }
 
-        public string id { get; set; }
+        public string Id { get; set; }
 
         public int X { get; set; }
         

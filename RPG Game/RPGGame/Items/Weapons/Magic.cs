@@ -5,9 +5,9 @@
         public Magic(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
             : base(id, x, y, sizeX, sizeY, range, force)
         {
-            this.id = "Magic";
+            this.Id = "Magic";
             this.Range = 40;
-            force = DamageForce.Extralarge;
+            force = DamageForce.ExtraLarge;
         }
     }
 }

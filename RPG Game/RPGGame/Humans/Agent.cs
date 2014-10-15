@@ -11,7 +11,7 @@
             int healthPoints, int defensePoints, int movementSpeed, LaserGun laserGun)
             : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
-            this.id = "Agent";
+            this.Id = "Agent";
             this.MaximumHealthPoints = 90;
             this.DefensePoints = 50;
             this.MovementSpeed = 50;

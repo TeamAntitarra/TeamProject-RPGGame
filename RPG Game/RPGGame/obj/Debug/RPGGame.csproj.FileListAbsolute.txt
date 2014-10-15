@@ -10,3 +10,15 @@ C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RP
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.GameForm.resources
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csproj.GenerateResource.Cache
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.RPGGameMenu.resources
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.exe.config
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.exe
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.exe
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.pdb
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\EntityFramework.dll
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\EntityFramework.xml
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csprojResolveAssemblyReference.cache
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.Properties.Resources.resources
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.GameForm.resources
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.RPGGameMenu.resources
+D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csproj.GenerateResource.Cache

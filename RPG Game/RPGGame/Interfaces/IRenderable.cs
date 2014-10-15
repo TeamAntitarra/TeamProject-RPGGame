@@ -2,6 +2,6 @@
 {
     public interface IRenderable : IGameObject
     {
-        string id { get; set; }
+        string Id { get; set; }
     }
 }
