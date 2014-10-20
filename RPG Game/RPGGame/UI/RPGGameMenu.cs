@@ -26,7 +26,8 @@ namespace RPGGame.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            gameForm.Show(); this.Hide();
+            gameForm.Show(); 
+            this.Hide();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
