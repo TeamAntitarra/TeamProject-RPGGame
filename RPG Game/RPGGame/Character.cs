@@ -15,7 +15,6 @@
             this.CurrentHealthPoints = this.MaximumHealthPoints;
             this.DefensePoints = defensePoints;
             this.MovementSpeed = movementSpeed;
-            this.Inventory = new List<Item>();
         }
 
         public int CurrentHealthPoints
@@ -60,12 +59,6 @@
      
         public Direction Direction { get; set; }
 
-        public List<Item> Inventory { get; set; }
-
-        public abstract void AddToInventory(Item item);
-
-        public abstract void RemoveFromInventory(Item item);
-      
         public virtual void Move()
         {
             this.X += this.Direction.DirectionX * this.MovementSpeed;

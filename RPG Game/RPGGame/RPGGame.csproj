@@ -89,6 +89,7 @@
     <Compile Include="Interfaces\IFightable.cs" />
     <Compile Include="Interfaces\IFlyable.cs" />
     <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IItemHolderable.cs" />
     <Compile Include="Interfaces\IMovable.cs" />
     <Compile Include="Interfaces\IPaintInterface.cs" />
     <Compile Include="Interfaces\IRenderable.cs" />
@@ -121,12 +122,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\GameForm.Designer.cs">
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\KeyboardMouseInterface.cs" />
     <Compile Include="UI\PaintBrush.cs" />
     <Compile Include="UI\RPGGameMenu.cs">
       <SubType>Form</SubType>
@@ -161,6 +169,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>

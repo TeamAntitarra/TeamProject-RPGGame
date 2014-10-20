@@ -4,24 +4,20 @@
 
     public class Succubus : Demon, IFlyable
     {
+        private const string Id = "Succubus";
+        private const int HealthPoints = 100;
+        private const int DefensePoints = 70;
+        private const int MovementSpeed = 12;
 
-        public Succubus(string id, int x, int y, int sizeX, int sizeY,
-                int healthPoints, int defensePoints, int movementSpeed)
-                : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
+        public Succubus(int x, int y, int sizeX, int sizeY)
+            : base(Id, x, y, sizeX, sizeY, HealthPoints, DefensePoints, MovementSpeed)
             {
-                this.Id = "Succubus";
-                this.MaximumHealthPoints = 100;
-                this.DefensePoints = 70;
-                this.MovementSpeed = 70;
+       
             }
 
-        //public Succubus(string id, int healthPoints, int defensePoints, double range)
-        //    : base(id, healthPoints, defensePoints, range)
-        //{
-        //    this.id = "Succubus";
-        //    this.HealthPoints = 100;
-        //    this.DefensePoints = 70;
-        //    this.Range = 30;
-        //}
+        public void Fly()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

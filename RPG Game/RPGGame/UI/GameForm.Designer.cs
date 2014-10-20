@@ -37,6 +37,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1016, 741);
+            this.MaximumSize = new System.Drawing.Size(1980, 1280);
+            this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "GameForm";
             this.Text = "RPG Game";
             this.Load += new System.EventHandler(this.GameForm_Load);

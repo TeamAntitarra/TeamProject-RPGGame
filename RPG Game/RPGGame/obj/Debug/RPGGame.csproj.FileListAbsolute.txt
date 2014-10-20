@@ -22,3 +22,4 @@ D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\R
 D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.GameForm.resources
 D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.RPGGameMenu.resources
 D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csproj.GenerateResource.Cache
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Credits.resources

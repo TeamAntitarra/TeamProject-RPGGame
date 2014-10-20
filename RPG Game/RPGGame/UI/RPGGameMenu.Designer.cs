@@ -33,6 +33,7 @@
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonCredits = new System.Windows.Forms.Button();
+            this.story = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,10 +52,10 @@
             // 
             this.buttonStart.BackColor = System.Drawing.Color.DarkRed;
             this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonStart.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonStart.ForeColor = System.Drawing.Color.White;
             this.buttonStart.Location = new System.Drawing.Point(221, 187);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(109, 23);
+            this.buttonStart.Size = new System.Drawing.Size(120, 25);
             this.buttonStart.TabIndex = 1;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = false;
@@ -64,10 +65,10 @@
             // 
             this.buttonExit.BackColor = System.Drawing.Color.DarkRed;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonExit.ForeColor = System.Drawing.Color.White;
             this.buttonExit.Location = new System.Drawing.Point(221, 234);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(109, 23);
+            this.buttonExit.Size = new System.Drawing.Size(120, 25);
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -77,14 +78,26 @@
             // 
             this.buttonCredits.BackColor = System.Drawing.Color.DarkRed;
             this.buttonCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCredits.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonCredits.ForeColor = System.Drawing.Color.White;
             this.buttonCredits.Location = new System.Drawing.Point(221, 277);
             this.buttonCredits.Name = "buttonCredits";
-            this.buttonCredits.Size = new System.Drawing.Size(109, 23);
+            this.buttonCredits.Size = new System.Drawing.Size(120, 25);
             this.buttonCredits.TabIndex = 3;
             this.buttonCredits.Text = "Credits";
             this.buttonCredits.UseVisualStyleBackColor = false;
             this.buttonCredits.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // story
+            // 
+            this.story.BackColor = System.Drawing.Color.DarkRed;
+            this.story.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.story.ForeColor = System.Drawing.Color.White;
+            this.story.Location = new System.Drawing.Point(221, 147);
+            this.story.Name = "story";
+            this.story.Size = new System.Drawing.Size(120, 25);
+            this.story.TabIndex = 4;
+            this.story.Text = "Story";
+            this.story.UseVisualStyleBackColor = false;
             // 
             // RPGGameMenu
             // 
@@ -92,10 +105,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(581, 458);
+            this.Controls.Add(this.story);
             this.Controls.Add(this.buttonCredits);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "RPGGameMenu";
             this.Text = "RPGGameMenu";
             this.Load += new System.EventHandler(this.RPGGameMenu_Load);
@@ -110,5 +125,6 @@
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonCredits;
+        private System.Windows.Forms.Button story;
     }
 }

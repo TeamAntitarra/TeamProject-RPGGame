@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace RPGGame.UI
         {
             this.gameWindow = form;
             this.LoadResources();
+            this.pictureBoxes = new List<PictureBox>();
         }
 
         private void CreatePictureBox(IRenderable renderableObject)
@@ -62,7 +64,7 @@ namespace RPGGame.UI
 
         public void AddObject(IRenderable renderableObject)
         {
-            throw new NotImplementedException();
+            this.CreatePictureBox(renderableObject);
         }
 
         public void RemoveObject(IRenderable renderableObject)
@@ -70,9 +72,16 @@ namespace RPGGame.UI
             throw new NotImplementedException();
         }
 
-        public void RedrawObject(IRenderable renderableObject)
+        public void RedrawObject(IRenderable objectToBeRedrawn)
         {
-            throw new NotImplementedException();
+            var newCoordinates = new Point(objectToBeRedrawn.X, objectToBeRedrawn.Y);
+            PictureBox picBox = GetPictureBoxByObject(objectToBeRedrawn);
+            picBox.Location = newCoordinates;
+        }
+
+        private PictureBox GetPictureBoxByObject(IRenderable renderableObject)
+        {
+            return this.pictureBoxes.First(p => p.Tag == renderableObject);
         }
     }
 }

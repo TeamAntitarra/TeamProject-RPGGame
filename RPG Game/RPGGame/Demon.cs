@@ -8,15 +8,5 @@
         {
          
         }
-
-        public override void AddToInventory(Item item)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void RemoveFromInventory(Item item)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

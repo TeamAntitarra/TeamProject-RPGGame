@@ -7,6 +7,9 @@ namespace RPGGame.UI
 {
     public partial class GameForm : Form
     {
+
+        public const int TimeInterval = 200;
+
         public GameForm()
         {
             InitializeComponent();
@@ -14,8 +17,19 @@ namespace RPGGame.UI
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            Engine engine = new Engine();
+            
+            IUserInputInterface controler = new KeyboardMouseInterface(this);
             IPaintInterface painter = new PaintBrush(this);
+            Engine engine = new Engine(controler, painter);
+
+            Timer timer = new Timer();
+            timer.Interval = TimeInterval;
+            timer.Tick += (s, args) =>
+            {
+                engine.Update();
+            };
+
+            timer.Start();
         }
     }
 }

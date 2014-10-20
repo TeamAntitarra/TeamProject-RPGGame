@@ -5,33 +5,24 @@
     using RPGGame.Items;
     using RPGGame.Items.Weapons;
 
-    public class TheProwler : Demon, IFightable
+    public class TheProwler : Demon, IFightable, IItemHolderable
     {
-        public TheProwler(string id, int x, int y, int sizeX, int sizeY,
-                int healthPoints, int defensePoints, int movementSpeed, MeltingGun meltingGun)
-                : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
-            {
-                this.Id = "The Prowler";
-                this.MaximumHealthPoints = 60;
-                this.DefensePoints = 30;
-                this.MovementSpeed = 30;
-                this.Weapon = meltingGun;
-                this.Inventory = new List<Item>(2);
-            }
+        private const string Id = "El Temblo";
+        private const int HealthPoints = 100;
+        private const int DefensePoints = 100;
+        private const int MovementSpeed = 12;
 
-        //public TheProwler(string id, int healthPoints, int defensePoints, double range)
-        //    : base(id, healthPoints, defensePoints, range)
-        //{
-        //    this.id = "The Prowler";
-        //    this.HealthPoints = 60;
-        //    this.DefensePoints = 30;
-        //    this.Range = 20;
-        //    this.Inventory = new List<Item>(2);
-        //}
+        public TheProwler(int x, int y, int sizeX, int sizeY)
+            : base(Id, x, y, sizeX, sizeY, HealthPoints, DefensePoints, MovementSpeed)
+            {
+                 this.Inventory = new List<Item>(2);
+            }
 
         public Weapon Weapon { get; set; }
 
-        public override void AddToInventory(Item item)
+        public List<Item> Inventory { get; set; }
+
+        public void AddToInventory(Item item)
         {
             if (this.Inventory.Count < 2)
             {
@@ -39,7 +30,7 @@
             }
         }
 
-        public override void RemoveFromInventory(Item item)
+        public void RemoveFromInventory(Item item)
         {
             this.Inventory.Remove(item);
         }

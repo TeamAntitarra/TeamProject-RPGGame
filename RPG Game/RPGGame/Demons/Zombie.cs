@@ -2,22 +2,15 @@
 {
     public class Zombie : Demon
     {
-        public Zombie(string id, int x, int y, int sizeX, int sizeY,
-            int healthPoints, int defensePoints, int movementSpeed)
-            : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
-        {
-            this.Id = "Zombie";
-            this.MaximumHealthPoints = 30;
-            this.DefensePoints = 10;
-            this.MovementSpeed = 10;
-        }
-        //public Zombie(string id, int healthPoints, int defensePoints, double range)
-        //    : base(id, healthPoints, defensePoints, range)
-        //{
-        //    this.id = "Zombie";
-        //    this.HealthPoints = 30;
-        //    this.DefensePoints = 10;
-        //    this.Range = 10;
-        //}
+        private const string Id = "Zombie";
+        private const int HealthPoints = 30;
+        private const int DefensePoints = 20;
+        private const int MovementSpeed = 1;
+
+        public Zombie(int x, int y, int sizeX, int sizeY)
+            : base(Id, x, y, sizeX, sizeY, HealthPoints, DefensePoints, MovementSpeed)
+            {
+       
+            }
     }
 }

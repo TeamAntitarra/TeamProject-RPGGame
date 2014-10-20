@@ -5,33 +5,24 @@
     using RPGGame.Items;
     using RPGGame.Items.Weapons;
 
-    public class Sergeant : Human, IFightable
+    public class Sergeant : Human, IFightable, IItemHolderable
     {
-        public Sergeant(string id, int x, int y, int sizeX, int sizeY,
-            int healthPoints, int defensePoints, int movementSpeed, MachineGun machineGun)
-            : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
+        private const string Id = "Sergeant";
+        private const int HealthPoints = 100;
+        private const int DefensePoints = 6;
+        private const int MovementSpeed = 7;
+
+        public Sergeant(int x, int y, int sizeX, int sizeY)
+            : base(Id, x, y, sizeX, sizeY, HealthPoints, DefensePoints, MovementSpeed)
         {
-            this.Id = "Sergeant";
-            this.MaximumHealthPoints = 90;
-            this.DefensePoints = 50;
-            this.MovementSpeed = 50;
-            this.Weapon = machineGun;
-            this.Inventory = new List<Item>(5);
+             this.Inventory = new List<Item>(5);
         }
- 
-        //public Sergeant(string id, int healthPoints, int defensePoints, double range)
-        //    : base(id, healthPoints, defensePoints, range)
-        //{
-        //    this.id = "Sergeant";
-        //    this.HealthPoints = 90;
-        //    this.DefensePoints = 50;
-        //    this.Range = 5;
-        //    this.Inventory = new List<Item>(5);
-        //}
 
         public Weapon Weapon { get; set; }
 
-        public override void AddToInventory(Item item)
+        public List<Item> Inventory { get; set; }
+
+        public void AddToInventory(Item item)
         {
             if (this.Inventory.Count < 5)
             {
@@ -39,7 +30,7 @@
             }
         }
 
-        public override void RemoveFromInventory(Item item)
+        public void RemoveFromInventory(Item item)
         {
             this.Inventory.Remove(item);
         }
