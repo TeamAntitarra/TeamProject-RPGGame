@@ -3,11 +3,11 @@
     public class MeltingGun : Weapon
     {
         public MeltingGun(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
-            : base(id, x, y, sizeX, sizeY, range, force)
+            : base(id, x, y, sizeX, sizeY, range)
         {
-            this.id = "Melting Gun";
+            this.Id = "Melting Gun";
             this.Range = 40;
-            force = DamageForce.Extralarge;
+            force = DamageForce.ExtraLarge;
         }
     }
 }

@@ -6,7 +6,7 @@
         public Ammo(string id, int x, int y, int sizeX, int sizeY)
             : base(id, x, y, sizeX, sizeY)
         {
-            this.id = "Ammo";
+            this.Id = "Ammo";
         }
     }
 }

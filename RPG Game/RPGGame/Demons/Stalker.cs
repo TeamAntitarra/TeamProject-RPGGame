@@ -6,7 +6,7 @@
                 int healthPoints, int defensePoints, int movementSpeed)
                 : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
             {
-                this.id = "Stalker";
+                this.Id = "Stalker";
                 this.MaximumHealthPoints = 50;
                 this.DefensePoints = 50;
                 this.MovementSpeed = 50;

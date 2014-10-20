@@ -11,7 +11,7 @@
                 int healthPoints, int defensePoints, int movementSpeed, MeltingGun meltingGun)
                 : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
             {
-                this.id = "The Prowler";
+                this.Id = "The Prowler";
                 this.MaximumHealthPoints = 60;
                 this.DefensePoints = 30;
                 this.MovementSpeed = 30;

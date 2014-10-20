@@ -11,7 +11,7 @@
             int healthPoints, int defensePoints, int movementSpeed, Magic magic)
             : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
-            this.id = "Magician";
+            this.Id = "Magician";
             this.MaximumHealthPoints = 100;
             this.DefensePoints = 90;
             this.MovementSpeed = 90;

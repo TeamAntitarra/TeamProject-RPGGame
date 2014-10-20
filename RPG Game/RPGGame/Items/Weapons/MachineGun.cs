@@ -3,9 +3,9 @@
     public class MachineGun : Weapon
     {
         public MachineGun(string id, int x, int y, int sizeX, int sizeY, double range, DamageForce force)
-            : base(id, x, y, sizeX, sizeY, range, force)
+            : base(id, x, y, sizeX, sizeY, range)
         {
-            this.id = "Machine Gun";
+            this.Id = "Machine Gun";
             this.Range = 40;
             force = DamageForce.Middle;
         }

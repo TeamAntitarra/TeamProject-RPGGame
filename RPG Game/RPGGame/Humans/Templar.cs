@@ -11,7 +11,7 @@
             int healthPoints, int defensePoints, int movementSpeed, TemplarSword templarSword)
             : base(id, x, y, sizeX, sizeY, healthPoints, defensePoints, movementSpeed)
         {
-            this.id = "Templar";
+            this.Id = "Templar";
             this.MaximumHealthPoints = 100;
             this.DefensePoints = 100;
             this.MovementSpeed = 100;

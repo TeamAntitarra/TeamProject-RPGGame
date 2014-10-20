@@ -5,6 +5,6 @@
         Small = 10,
         Middle = 30,
         Large = 60,
-        Extralarge = 90
+        ExtraLarge = 90
     }
 }
