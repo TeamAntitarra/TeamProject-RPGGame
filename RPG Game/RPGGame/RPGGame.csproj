@@ -142,6 +142,12 @@
     <Compile Include="UI\RPGGameMenu.Designer.cs">
       <DependentUpon>RPGGameMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Story.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Story.Designer.cs">
+      <DependentUpon>Story.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\RPGGameMenu.resx">
       <DependentUpon>RPGGameMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Story.resx">
+      <DependentUpon>Story.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

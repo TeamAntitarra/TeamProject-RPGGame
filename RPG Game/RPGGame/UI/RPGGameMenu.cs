@@ -14,6 +14,7 @@ namespace RPGGame.UI
     {
         GameForm gameForm = new GameForm();
         Credits creditsForm = new Credits();
+        Story storyForm = new Story();
 
         public RPGGameMenu()
         {
@@ -27,7 +28,7 @@ namespace RPGGame.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-           gameForm.Show(); 
+           gameForm.Show();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -38,6 +39,11 @@ namespace RPGGame.UI
         private void button3_Click(object sender, EventArgs e)
         {
             creditsForm.Show();
+        }
+
+        private void story_Click(object sender, EventArgs e)
+        {
+            storyForm.Show();
         }
     }
 }

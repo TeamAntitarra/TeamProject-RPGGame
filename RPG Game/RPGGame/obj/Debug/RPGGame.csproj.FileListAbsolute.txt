@@ -23,3 +23,17 @@ D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\R
 D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.RPGGameMenu.resources
 D:\SoftUni\#2\OOP\teamwork\repo\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csproj.GenerateResource.Cache
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Credits.resources
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.Properties.Resources.resources
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Credits.resources
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.UI.GameForm.resources
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.UI.RPGGameMenu.resources
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Story.resources
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.csproj.GenerateResource.Cache
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\bin\Debug\RPGGame.exe.config
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\bin\Debug\RPGGame.exe
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\bin\Debug\RPGGame.pdb
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\bin\Debug\EntityFramework.dll
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\bin\Debug\EntityFramework.xml
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.exe
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
+D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.csprojResolveAssemblyReference.cache

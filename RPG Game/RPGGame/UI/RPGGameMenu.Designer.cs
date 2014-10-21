@@ -98,6 +98,7 @@
             this.story.TabIndex = 4;
             this.story.Text = "Story";
             this.story.UseVisualStyleBackColor = false;
+            this.story.Click += new System.EventHandler(this.story_Click);
             // 
             // RPGGameMenu
             // 
