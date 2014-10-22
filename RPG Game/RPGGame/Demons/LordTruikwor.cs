@@ -11,7 +11,7 @@
         private const string Id = "Lord Truikwor";
         private const int HealthPoints = 100;
         private const int DefensePoints = 100;
-        private const int MovementSpeed = 10;
+        private const int MovementSpeed = 20;
 
         protected static Random random = new Random();
 

@@ -28,6 +28,7 @@
             Character templar = new Templar(200, 300, 95, 120);
             items = new List<GameObject>() 
             {
+                templar,
                 new LordTruikwor(800, 300, 140, 187),
                 new Tree(650, 0, 330, 213),
                 new Tree(0, 0, 330, 213),
@@ -38,7 +39,7 @@
                 new Zombie(900, 590, 45, 109)
             };
 
-            painter.AddObject(templar);
+            //painter.AddObject(templar);
             foreach (var item in items)
 	        {
 		         painter.AddObject(item);
@@ -49,14 +50,15 @@
 
         public void Update()
         {
-            this.painter.RedrawObject(player);
+            //this.painter.RedrawObject(player);
             foreach (var item in items)
             {
-                if (item is IMovable)
+                if (item is IMovable && !(item is Templar))
                 {
-                    ProcessMovement(item as IMovable);
-                    this.painter.RedrawObject(item);
+                    //ProcessMovement(item as IMovable);
+                    (item as IMovable).Move();
                 }
+                this.painter.RedrawObject(item);
             }
         }
 
@@ -86,23 +88,22 @@
 
         private void ProcessMovement(IMovable movableObject)
         {
-            movableObject.Move();
+             movableObject.Move();
         }
 
-        //private bool CollisionDispatcher(IMovable movableObject)
-        //{
-        //    foreach (var item in items)
-        //    {
-        //        if (!item.Equals(movableObject))
-        //        {
-        //            return (item.X + item.SizeX < movableObject.X || item.Y + item.SizeY < movableObject.Y || 
-        //                    item.X > movableObject.X + movableObject.SizeX ||
-        //                    item.Y > movableObject.Y + movableObject.SizeY);
-        //        }
-        //    }
+        private bool isCollision(IGameObject movableObject)
+        {
+            foreach (var item in items)
+            {
+                if (!item.Equals(movableObject))
+                {
+                    return (item.X < movableObject.X + movableObject.SizeX && item.X + item.SizeX > movableObject.X &&
+                            item.Y < movableObject.Y + movableObject.SizeY && item.Y + item.SizeY > movableObject.Y);
+                }
+            }
 
-        //    return true;
-        //}
+            return false;
+        }
 
         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {

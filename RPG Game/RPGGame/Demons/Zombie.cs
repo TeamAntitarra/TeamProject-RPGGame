@@ -19,8 +19,8 @@
 
         public override void Move()
         {
-            int dirX = random.Next(-1, 2);
-            int dirY = random.Next(-1, 2);
+            int dirX = random.Next(-1, 1);
+            int dirY = random.Next(-1, 1);
             this.Direction = new Direction(dirX, dirY);
             base.Move();
         }

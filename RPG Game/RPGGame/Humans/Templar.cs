@@ -10,7 +10,7 @@
         private const string Id = "Templar";
         private const int HealthPoints = 100;
         private const int DefensePoints = 100;
-        private const int MovementSpeed = 10;
+        private const int MovementSpeed = 20;
 
         public Templar(int x, int y, int sizeX, int sizeY)
             : base(Id, x, y, sizeX, sizeY, HealthPoints, DefensePoints, MovementSpeed)
