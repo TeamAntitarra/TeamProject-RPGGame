@@ -4,13 +4,16 @@
     using RPGGame.Humans;
     using RPGGame.Demons;
     using RPGGame.Items;
+    using RPGGame.Items.Objects;
     using RPGGame.Items.Weapons;
+    using System.Collections.Generic;
 
     public class Engine
     {
         private IUserInputInterface controler;
         private IPaintInterface painter;
         private Character player;
+        private List<GameObject> items;
 
         public Engine(IUserInputInterface controler, IPaintInterface painter)
         {
@@ -21,17 +24,40 @@
         }
 
         private void InitializeObject()
-        {
-            Character templar = new Templar(200, 300, 75, 110);
-            Character lordTruikwor = new LordTruikwor(900, 300, 150, 210);
+        { 
+            Character templar = new Templar(200, 300, 95, 120);
+            items = new List<GameObject>() 
+            {
+                new LordTruikwor(800, 300, 140, 187),
+                new Tree(650, 0, 330, 213),
+                new Tree(0, 0, 330, 213),
+                new Rock(330, 40, 120, 89),
+                new Rock(0, 680, 120, 89),
+                new Zombie(1000, 630, 45, 109),
+                new Zombie(950, 610, 45, 109),
+                new Zombie(900, 590, 45, 109)
+            };
+
             painter.AddObject(templar);
-            painter.AddObject(lordTruikwor);
+            foreach (var item in items)
+	        {
+		         painter.AddObject(item);
+	        }
+           
             this.player = templar;
         }
 
         public void Update()
         {
             this.painter.RedrawObject(player);
+            foreach (var item in items)
+            {
+                if (item is IMovable)
+                {
+                    ProcessMovement(item as IMovable);
+                    this.painter.RedrawObject(item);
+                }
+            }
         }
 
         private void MovePlayerUp()
@@ -57,6 +83,26 @@
             this.player.Direction = new Direction(-1, 0);
             this.player.Move();
         }
+
+        private void ProcessMovement(IMovable movableObject)
+        {
+            movableObject.Move();
+        }
+
+        //private bool CollisionDispatcher(IMovable movableObject)
+        //{
+        //    foreach (var item in items)
+        //    {
+        //        if (!item.Equals(movableObject))
+        //        {
+        //            return (item.X + item.SizeX < movableObject.X || item.Y + item.SizeY < movableObject.Y || 
+        //                    item.X > movableObject.X + movableObject.SizeX ||
+        //                    item.Y > movableObject.Y + movableObject.SizeY);
+        //        }
+        //    }
+
+        //    return true;
+        //}
 
         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {

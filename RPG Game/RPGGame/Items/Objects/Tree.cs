@@ -2,10 +2,12 @@
 {
     public class Tree : Item
     {
-        public Tree(string id, int x, int y, int sizeX, int sizeY)
-            : base(id, x, y, sizeX, sizeY)
+        private const string Id = "Tree";
+
+        public Tree(int x, int y, int sizeX, int sizeY)
+            : base(Id, x, y, sizeX, sizeY)
         {
-            this.Id = "Tree";
+            
         }
     }
 }

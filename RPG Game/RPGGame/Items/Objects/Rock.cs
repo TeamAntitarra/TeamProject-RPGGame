@@ -2,10 +2,12 @@
 {
     public class Rock : Item
     {
-        public Rock(string id, int x, int y, int sizeX, int sizeY)
-            : base(id, x, y, sizeX, sizeY)
+        private const string Id = "Rock";
+
+        public Rock(int x, int y, int sizeX, int sizeY)
+            : base(Id, x, y, sizeX, sizeY)
         {
-            this.Id = "Rock";
+ 
         }
     }
 }

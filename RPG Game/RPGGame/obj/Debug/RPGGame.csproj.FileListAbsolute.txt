@@ -37,3 +37,4 @@ D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\bin\Debug\EntityFramework.xml
 D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.exe
 D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
 D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.csprojResolveAssemblyReference.cache
+C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Story.resources
