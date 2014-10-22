@@ -95,6 +95,7 @@ namespace RPGGame.UI
         {
             GameForm gameForm = new GameForm();
             gameForm.Show();
+            this.Close();
         }
 
         private void GiveupButton_Click(object sender, EventArgs e)
