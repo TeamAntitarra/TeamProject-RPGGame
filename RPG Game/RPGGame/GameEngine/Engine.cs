@@ -1,7 +1,6 @@
-﻿using System.Linq;
-
-namespace RPGGame.GameEngine
+﻿namespace RPGGame.GameEngine
 {
+    using System.Linq;
     using RPGGame.Interfaces;
     using RPGGame.Humans;
     using RPGGame.Demons;
@@ -32,6 +31,7 @@ namespace RPGGame.GameEngine
             
             objects.Add(templar);
             objects.Add(new LordTruikwor(800, 300, 140, 187));
+            objects.Add(new ElTemblo(300, 600, 150, 109));
             objects.Add(new Zombie(1000, 630, 45, 109));
             objects.Add(new Zombie(950, 610, 45, 109));
             objects.Add(new Zombie(900, 590, 45, 109));
@@ -125,7 +125,7 @@ namespace RPGGame.GameEngine
             return false;
         }
 
-        private void SubscribeToUserInput(IUserInputInterface userInteface)
+         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {
             userInteface.OnUpPressed += (sender, args) => this.MovePlayerUp();
             userInteface.OnDownPressed += (sender, args) => this.MovePlayerDown();

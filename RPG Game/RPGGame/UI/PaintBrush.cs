@@ -14,12 +14,14 @@ namespace RPGGame.UI
         private const string TreeImagePath = "../../Images/tree.png";
         private const string RockImagePath = "../../Images/rock.png";
         private const string ZombieImagePath = "../../Images/zombie.png";
+        private const string EltembloImagePath = "../../Images/eltemblo.png";
 
         private Image tamplerImage;
         private Image LordTruikworImage;
         private Image TreeImage;
         private Image RockImage;
         private Image ZombieImage;
+        private Image EltembloImage;
         private Form gameWindow;
         private List<PictureBox> pictureBoxes;
 
@@ -64,6 +66,9 @@ namespace RPGGame.UI
                 case "Zombie":
                     image = this.ZombieImage;
                     break;
+                case "El Temblo":
+                    image = this.EltembloImage;
+                    break;
                 default:
                     break;
             }
@@ -78,6 +83,7 @@ namespace RPGGame.UI
             this.TreeImage = Image.FromFile(TreeImagePath);
             this.RockImage = Image.FromFile(RockImagePath);
             this.ZombieImage = Image.FromFile(ZombieImagePath);
+            this.EltembloImage = Image.FromFile(EltembloImagePath);
         }
 
         public void AddObject(IRenderable renderableObject)
