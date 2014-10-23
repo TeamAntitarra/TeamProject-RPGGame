@@ -1,4 +1,6 @@
-﻿namespace RPGGame.GameEngine
+﻿using System.Linq;
+
+namespace RPGGame.GameEngine
 {
     using RPGGame.Interfaces;
     using RPGGame.Humans;
@@ -106,6 +108,7 @@
 
         private void ProcessMovement(IMovable movableObject)
         {
+<<<<<<< HEAD
             if (!(movableObject is Templar))
             {
                 movableObject.Move();
@@ -121,26 +124,22 @@
 	        }
   
             return false;
+=======
+             movableObject.Move();
+        }
+
+        private bool isCollision(IGameObject movableObject)
+        {
+            return (from item in items where !item.Equals(movableObject) select (item.X < movableObject.X + movableObject.SizeX && item.X + item.SizeX > movableObject.X && item.Y < movableObject.Y + movableObject.SizeY && item.Y + item.SizeY > movableObject.Y)).FirstOrDefault();
+>>>>>>> 5a700a74761e1a729bc1bd27570268b7b91deeea
         }
 
         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {
-            userInteface.OnUpPressed += (sender, args) =>
-            {
-                this.MovePlayerUp();
-            };
-            userInteface.OnDownPressed += (sender, args) =>
-            {
-                this.MovePlayerDown();
-            };
-            userInteface.OnLeftPressed += (sender, args) =>
-            {
-                this.MovePlayerLeft();
-            };
-            userInteface.OnRightPressed += (sender, args) =>
-            {
-                this.MovePlayerRight();
-            };
+            userInteface.OnUpPressed += (sender, args) => this.MovePlayerUp();
+            userInteface.OnDownPressed += (sender, args) => this.MovePlayerDown();
+            userInteface.OnLeftPressed += (sender, args) => this.MovePlayerLeft();
+            userInteface.OnRightPressed += (sender, args) => this.MovePlayerRight();
         }
     }
 }

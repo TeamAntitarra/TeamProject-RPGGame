@@ -38,3 +38,17 @@ D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.exe
 D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
 D:\SoftUni\OOP Teamwork\trunk\RPG Game\RPGGame\obj\Debug\RPGGame.csprojResolveAssemblyReference.cache
 C:\Users\nemo\Documents\GitHub\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Story.resources
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.exe.config
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.exe
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.pdb
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.exe
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\RPGGame.pdb
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\EntityFramework.dll
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\bin\Debug\EntityFramework.xml
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csprojResolveAssemblyReference.cache
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.Properties.Resources.resources
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Credits.resources
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.GameForm.resources
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.RPGGameMenu.resources
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.UI.Story.resources
+E:\Data\SoftUni\SoftUni-Level2\Object-OrientedProgramming\OOP-Teamwork\TeamProject-RPGGame\RPG Game\RPGGame\obj\Debug\RPGGame.csproj.GenerateResource.Cache
