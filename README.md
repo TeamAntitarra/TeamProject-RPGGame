@@ -1,3 +1,5 @@
-TeamProject-RPGGame
+Team Project - Demon Invasion (RPG Game)
+
 ===================
+
 Team Antitarra @ SoftUni
