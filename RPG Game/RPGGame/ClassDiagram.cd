@@ -24,7 +24,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RPGGame.Human" Collapsed="true">
-    <Position X="6.5" Y="6.25" Width="1.5" />
+    <Position X="6.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
@@ -230,7 +230,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RPGGame.GameEngine.Engine" Collapsed="true">
-    <Position X="4.75" Y="2.25" Width="1.5" />
+    <Position X="5.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAABAAAgAAAAAAAAgAAAAAEABAAAABAgQAAAAUAAM=</HashCode>
       <FileName>GameEngine\Engine.cs</FileName>

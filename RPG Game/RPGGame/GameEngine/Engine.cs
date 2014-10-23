@@ -13,7 +13,7 @@ namespace RPGGame.GameEngine
     public class Engine
     {
         private IUserInputInterface controler;
-        private IPaintInterface painter;
+        private readonly IPaintInterface painter;
         private Character player;
         private List<GameObject> items;
 

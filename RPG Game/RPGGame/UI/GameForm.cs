@@ -20,16 +20,12 @@ namespace RPGGame.UI
             
             IUserInputInterface controler = new KeyboardMouseInterface(this);
             IPaintInterface painter = new PaintBrush(this);
-            Engine engine = new Engine(controler, painter);
-
-            Timer timer = new Timer();
-            timer.Interval = TimeInterval;
-            timer.Tick += (s, args) =>
-            {
-                engine.Update();
-            };
+            var engine = new Engine(controler, painter);
+            var timer = new Timer {Interval = TimeInterval};
+            timer.Tick += (s, args) => engine.Update();
 
             timer.Start();
         }
+
     }
 }
