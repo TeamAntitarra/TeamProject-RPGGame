@@ -87,7 +87,9 @@ namespace RPGGame.UI
 
         public void RemoveObject(IRenderable renderableObject)
         {
-            throw new NotImplementedException();
+            var picBox = GetPictureBoxByObject(renderableObject);
+            this.gameWindow.Controls.Remove(picBox);
+            this.pictureBoxes.Remove(picBox);
         }
 
         public void RedrawObject(IRenderable objectToBeRedrawn)
