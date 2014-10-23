@@ -5,7 +5,7 @@
     using RPGGame.Items;
     using RPGGame.Items.Weapons;
 
-    public class Magician : Human, IFightable, IItemHolderable
+    public class Magician : Human, IFightable, IItemHolderable, ISpellCastable
     {
         private const string Id = "Magician";
         private const int HealthPoints = 100;
@@ -33,6 +33,11 @@
         public void RemoveFromInventory(Item item)
         {
             this.Inventory.Remove(item);
+        }
+
+        public virtual void CastSpell(int x, int y)
+        {
+            
         }
     }
 }

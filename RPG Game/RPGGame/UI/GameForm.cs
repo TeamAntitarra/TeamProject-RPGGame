@@ -8,7 +8,7 @@ namespace RPGGame.UI
     public partial class GameForm : Form
     {
 
-        public const int TimeInterval = 100;
+        public const int TimeInterval = 1;
 
         public GameForm()
         {

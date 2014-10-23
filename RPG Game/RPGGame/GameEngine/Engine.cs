@@ -76,7 +76,7 @@
 
         private void RedrawAll()
         {
-            foreach (GameObject obj in this.objects)
+            foreach (var obj in this.objects)
             {
                 this.painter.RedrawObject(obj);
             }
@@ -85,33 +85,37 @@
         private void MovePlayerUp()
         {
             this.player.Direction = new Direction(0, -1);
-            this.player.Move();
+            //this.player.Move();
+            ProcessMovement(this.player);
         }
 
         private void MovePlayerDown()
         {
             this.player.Direction = new Direction(0, 1);
-            this.player.Move();
+            //this.player.Move();
+            ProcessMovement(this.player);
         }
 
         private void MovePlayerRight()
         {
             this.player.Direction = new Direction(1, 0);
-            this.player.Move();
+            //this.player.Move();
+            ProcessMovement(this.player);
         }
 
         private void MovePlayerLeft()
         {
             this.player.Direction = new Direction(-1, 0);
-            this.player.Move();
+            //this.player.Move();
+            ProcessMovement(this.player);
         }
 
-        private void ProcessMovement(IMovable movableObject)
+        private static void ProcessMovement(IMovable movableObject)
         {
-            if (!(movableObject is Templar))
-            {
+            //if (!(movableObject is Templar))
+            //{
                 movableObject.Move();
-            }
+            //}
         }
 
         private bool isCollision(GameObject gameObject, GameObject gameObjectOther)
@@ -125,7 +129,7 @@
             return false;
         }
 
-         private void SubscribeToUserInput(IUserInputInterface userInteface)
+        private void SubscribeToUserInput(IUserInputInterface userInteface)
         {
             userInteface.OnUpPressed += (sender, args) => this.MovePlayerUp();
             userInteface.OnDownPressed += (sender, args) => this.MovePlayerDown();
