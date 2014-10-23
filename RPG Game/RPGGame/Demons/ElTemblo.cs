@@ -4,13 +4,16 @@
     using RPGGame.Interfaces;
     using RPGGame.Items;
     using RPGGame.Items.Weapons;
+    using System;
 
     public class ElTemblo : Demon, IFightable, IItemHolderable
     {
         private const string Id = "El Temblo";
         private const int HealthPoints = 100;
         private const int DefensePoints = 50;
-        private const int MovementSpeed = 9;
+        private const int MovementSpeed = 5;
+
+        protected static Random random = new Random();
 
         public ElTemblo(int x, int y, int sizeX, int sizeY)
             : base(Id, x, y, sizeX, sizeY, HealthPoints, DefensePoints, MovementSpeed)
@@ -33,6 +36,14 @@
         public void RemoveFromInventory(Item item)
         {
             this.Inventory.Remove(item);
+        }
+
+        public override void Move()
+        {
+            int dirX = random.Next(-1, 1);
+            int dirY = random.Next(-1, 1);
+            this.Direction = new Direction(dirX, dirY);
+            base.Move();
         }
     }
 }

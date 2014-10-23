@@ -1,7 +1,6 @@
-﻿using System.Linq;
-
-namespace RPGGame.GameEngine
+﻿namespace RPGGame.GameEngine
 {
+    using System.Linq;
     using RPGGame.Interfaces;
     using RPGGame.Humans;
     using RPGGame.Demons;
@@ -15,12 +14,13 @@ namespace RPGGame.GameEngine
         private IUserInputInterface controler;
         private readonly IPaintInterface painter;
         private Character player;
-        private List<GameObject> items;
+        private List<GameObject> objects;
 
         public Engine(IUserInputInterface controler, IPaintInterface painter)
         {
             this.controler = controler;
             this.painter = painter;
+            this.objects = new List<GameObject>();
             InitializeObject();
             SubscribeToUserInput(controler);
         }
@@ -28,39 +28,57 @@ namespace RPGGame.GameEngine
         private void InitializeObject()
         { 
             Character templar = new Templar(200, 300, 95, 120);
-            items = new List<GameObject>() 
-            {
-                templar,
-                new LordTruikwor(800, 300, 140, 187),
-                new Tree(650, 0, 330, 213),
-                new Tree(0, 0, 330, 213),
-                new Rock(330, 40, 120, 89),
-                new Rock(0, 680, 120, 89),
-                new Zombie(1000, 630, 45, 109),
-                new Zombie(950, 610, 45, 109),
-                new Zombie(900, 590, 45, 109)
-            };
-
-            //painter.AddObject(templar);
-            foreach (var item in items)
+            
+            objects.Add(templar);
+            objects.Add(new LordTruikwor(800, 300, 140, 187));
+            objects.Add(new ElTemblo(300, 600, 150, 109));
+            objects.Add(new Zombie(1000, 630, 45, 109));
+            objects.Add(new Zombie(950, 610, 45, 109));
+            objects.Add(new Zombie(900, 590, 45, 109));
+            objects.Add(new Rock(0, 680, 120, 89));
+            objects.Add(new Rock(330, 40, 120, 89));
+            objects.Add(new Tree(0, 0, 330, 213));
+            objects.Add(new Tree(650, 0, 330, 213));
+    
+            foreach (GameObject obj in objects)
 	        {
-		         painter.AddObject(item);
+		         painter.AddObject(obj);
 	        }
-           
-            this.player = templar;
-        }
 
+            this.player = templar; 
+        }
+       
         public void Update()
         {
-            //this.painter.RedrawObject(player);
-            foreach (var item in items)
+            this.ProcessGameObject();
+            this.RedrawAll();
+        }
+
+        private void ProcessGameObject()
+        {
+            foreach (GameObject obj in objects)
             {
-                if (item is IMovable && !(item is Templar))
+                if (obj is IMovable)
                 {
-                    //ProcessMovement(item as IMovable);
-                    (item as IMovable).Move();
+                    ProcessMovement(obj as IMovable);
                 }
-                this.painter.RedrawObject(item);
+
+                if (obj is Character)
+                {
+                    if (!((obj as Character).IsAlive))
+                    {
+                        this.painter.RemoveObject((obj as Character));
+                        this.objects.Remove(obj as Character);
+                    }
+                }
+            }
+        }
+
+        private void RedrawAll()
+        {
+            foreach (GameObject obj in this.objects)
+            {
+                this.painter.RedrawObject(obj);
             }
         }
 
@@ -90,15 +108,24 @@ namespace RPGGame.GameEngine
 
         private void ProcessMovement(IMovable movableObject)
         {
-             movableObject.Move();
+            if (!(movableObject is Templar))
+            {
+                movableObject.Move();
+            }
         }
 
-        private bool isCollision(IGameObject movableObject)
+        private bool isCollision(GameObject gameObject, GameObject gameObjectOther)
         {
-            return (from item in items where !item.Equals(movableObject) select (item.X < movableObject.X + movableObject.SizeX && item.X + item.SizeX > movableObject.X && item.Y < movableObject.Y + movableObject.SizeY && item.Y + item.SizeY > movableObject.Y)).FirstOrDefault();
+            if ((gameObjectOther.X < gameObject.X + gameObject.SizeX) && (gameObjectOther.X + gameObjectOther.SizeX > gameObject.X) &&
+                            (gameObjectOther.Y < gameObject.Y + gameObject.SizeY) && (gameObjectOther.Y + gameObjectOther.SizeY > gameObject.Y))
+	        {
+		        return true;
+	        }
+  
+            return false;
         }
 
-        private void SubscribeToUserInput(IUserInputInterface userInteface)
+         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {
             userInteface.OnUpPressed += (sender, args) => this.MovePlayerUp();
             userInteface.OnDownPressed += (sender, args) => this.MovePlayerDown();
