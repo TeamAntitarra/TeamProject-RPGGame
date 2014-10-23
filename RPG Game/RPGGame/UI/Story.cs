@@ -67,21 +67,28 @@ namespace RPGGame.UI
         private void StoryHell()
         {
             introText.Location = new Point(introText.Location.X, introText.Location.Y + 250);
-            introText.Text = "Всичко в кралството вървяло нормално докато един ден селото не било нападнато от зли демони \n        Принудени да изоставят къщите си жителите напуснали селото си.";
+            introText.Text = @"    Всичко в кралството вървяло нормално докато един ден селото не било нападнато от зли бъгове 
+                                Бъговете рушали всичко наред. Запалвали къщите на хората убивали добитъка им.
+                                    Принудени да изоставят къщите си жителите напуснали селото
+                              Чак след часове преследване, селяните се скрили в гората да отпочинат.";
             BackgroundImage = Image.FromFile(Application.StartupPath + "\\hell.jpg");
             stage++;
         }
         private void StoryHeaven()
         {
             introText.Location = new Point(introText.Location.X, introText.Location.Y + 250);
-            introText.Text = @"Тогава от небето пред нашия герой се явил ангел";
+            introText.Text = @"Тогава от небето блеснала ярка светлина,всички се уплашили и се покрили освен нашия герой
+                                    ,и се спуснал ангел и се насочил право към единствения останал на поляната";
             BackgroundImage = Image.FromFile(Application.StartupPath + "\\heaven.jpg");
             stage++;
         }
         private void StoryAngel()
         {
             introText.Location = new Point(introText.Location.X, introText.Location.Y + 250);
-            introText.Text = @"Ангелът го погледнал";
+            introText.Text = @"Ангелът застанал над него и му проговорил.
+                            -Ти момче беше отреден от ордена на Ангелите-програмисти
+                 От теб се иска да помогнеш на нас и цялото човечество, да се утървем от злите бъгове
+                                          Приемаш ли тази мисия?";
             BackgroundImage = Image.FromFile(Application.StartupPath + "\\angel.jpg");
             stage++;
         }
