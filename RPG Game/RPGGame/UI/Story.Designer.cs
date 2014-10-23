@@ -1,4 +1,7 @@
-﻿namespace RPGGame.UI
+﻿using System.Drawing;
+using System.Drawing.Text;
+
+namespace RPGGame.UI
 {
     partial class Story
     {
@@ -102,6 +105,7 @@
         private System.Windows.Forms.Label introText;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button GiveupButton;
-        private System.Windows.Forms.Button AcceptButton;
+        private new System.Windows.Forms.Button AcceptButton;
+
     }
 }

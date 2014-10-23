@@ -55,7 +55,7 @@
   <Class Name="RPGGame.Demons.LordTruikwor" Collapsed="true">
     <Position X="0.5" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAQAAAAAAAAAgAAAAIIAgAAAgAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAACAAAAQIAAAAAAAAgAAAAIIAgAAAgAAAQAAgAAAAA=</HashCode>
       <FileName>Demons\LordTruikwor.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -162,7 +162,7 @@
   <Class Name="RPGGame.Demons.Zombie" Collapsed="true">
     <Position X="0.5" Y="13.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAQAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAQIAAAAAAAAAAAAAIAAgAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Demons\Zombie.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -232,7 +232,7 @@
   <Class Name="RPGGame.GameEngine.Engine" Collapsed="true">
     <Position X="4.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAABAAAgAAAAAAAAAAAAAAEAAAAAABAgQAAAAUAAI=</HashCode>
+      <HashCode>AAQAABAAAgAAAAAAAAgAAAAAEABAAAABAgQAAAAUAAM=</HashCode>
       <FileName>GameEngine\Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -253,14 +253,14 @@
   <Class Name="RPGGame.Items.Objects.Rock" Collapsed="true">
     <Position X="13.75" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Objects\Rock.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RPGGame.Items.Objects.Tree" Collapsed="true">
     <Position X="13.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Objects\Tree.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -309,7 +309,7 @@
   <Class Name="RPGGame.UI.PaintBrush" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="12.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAACCAAAAEgAIAAAAAAAggBAAAIAAAABAAAAAAAQA=</HashCode>
+      <HashCode>AIAAACCAAAAEgAIAICAAAAggBAAAIEJAAFAAAAAAAQA=</HashCode>
       <FileName>UI\PaintBrush.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -324,7 +324,7 @@
   <Class Name="RPGGame.UI.Story" Collapsed="true">
     <Position X="15.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACIAIAAAAAiCAACCAAAJKAAAAAAAAIAEIAA=</HashCode>
+      <HashCode>AAQgAAAAACIAKAAAAACCAAACAAAJqAAAgAAAAAAEAAA=</HashCode>
       <FileName>UI\Story.cs</FileName>
     </TypeIdentifier>
   </Class>

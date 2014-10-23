@@ -12,7 +12,9 @@ namespace RPGGame.UI
 {
     public partial class Story : Form
     {
+        
         public int stage = 1;
+
         public Story()
         {
             InitializeComponent();
@@ -37,22 +39,22 @@ namespace RPGGame.UI
                 {
                     case 1:
                         {
-                            storyHell();
+                            StoryHell();
                             break;
                         }
                     case 2:
                         {
-                            storyHeaven();
+                            StoryHeaven();
                             break;
                         }
                     case 3:
                         {
-                            storyAngel();
+                            StoryAngel();
                             break;
                         }
                     case 4:
                         {
-                            storyDecide();
+                            StoryDecide();
                             break;
                         }
                     default:
@@ -62,30 +64,30 @@ namespace RPGGame.UI
             }
         }
         
-        private void storyHell()
+        private void StoryHell()
         {
             introText.Location = new Point(introText.Location.X, introText.Location.Y + 250);
             introText.Text = "Всичко в кралството вървяло нормално докато един ден селото не било нападнато от зли демони \n        Принудени да изоставят къщите си жителите напуснали селото си.";
             BackgroundImage = Image.FromFile(Application.StartupPath + "\\hell.jpg");
             stage++;
         }
-        private void storyHeaven()
+        private void StoryHeaven()
         {
             introText.Location = new Point(introText.Location.X, introText.Location.Y + 250);
-            introText.Text = "Тогава от небето пред нашия герой се явил ангел";
+            introText.Text = @"Тогава от небето пред нашия герой се явил ангел";
             BackgroundImage = Image.FromFile(Application.StartupPath + "\\heaven.jpg");
             stage++;
         }
-        private void storyAngel()
+        private void StoryAngel()
         {
             introText.Location = new Point(introText.Location.X, introText.Location.Y + 250);
-            introText.Text = "Ангелът го погледнал";
+            introText.Text = @"Ангелът го погледнал";
             BackgroundImage = Image.FromFile(Application.StartupPath + "\\angel.jpg");
             stage++;
         }
-        private void storyDecide()
+        private void StoryDecide()
         {
-            introText.Text = "Изборът и съдбата на човечеството е пред теб!!!";
+            introText.Text = @"Изборът и съдбата на човечеството е пред теб!!!";
             AcceptButton.Visible = true;
             GiveupButton.Visible = true;
             timer1.Stop();
@@ -93,7 +95,7 @@ namespace RPGGame.UI
 
         private void AcceptButton_Click(object sender, EventArgs e)
         {
-            GameForm gameForm = new GameForm();
+            var gameForm = new GameForm();
             gameForm.Show();
             this.Close();
         }
